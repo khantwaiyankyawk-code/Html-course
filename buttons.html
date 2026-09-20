@@ -2,6 +2,7 @@
   .SUBSCRIBE-button{
     background-color: rgb(201, 15, 15);
     color: white;
+    font-size: 14px;
     border: none;
     height: 40px;
     width: 115px;
@@ -10,14 +11,18 @@
     margin-right:8px;
     transition: opacity 0.15s;
   }
+  
   .SUBSCRIBE-button:hover{
     opacity: 0.8;
   }
-  .SUBSCRIBE-button{
-    opacity:0.15;
+
+  .SUBSCRIBE-button:active{
+    opacity: 0.5;
   }
-    
 </style>
+
+
+
 
 <style>
 .tweet-button{
@@ -31,9 +36,19 @@
   font-size: 15px;
   cursor: pointer;
   margin-left: 8px;
+  transition: box-shadow 0.15s;
+ 
   
 }
+
+.tweet-button:hover{
+ box-shadow: 4px 5px 6px rgba(0,0,0,0.15)
+}
+.tweet-button:active{
+  opacity: 0.6;
+}
 </style>
+
 
 <style>
   .join-button{
@@ -46,6 +61,16 @@
     width: 63;
     border-radius: 2px;
     cursor: pointer;
+    transition: background-color 0.15s,color 0.15s;
+  }
+
+  .join-button:hover{
+    background-color:rgb(29, 155, 240);  
+    color:white; 
+  }
+
+  .join-button:active{
+    opacity: 0.7;
   }
 </style>
 
